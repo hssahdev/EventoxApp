@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.LoginFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -74,22 +74,22 @@
                     android:textColor="@android:color/black" />
 
                 <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="#FFEB3B"
-                app:passwordToggleEnabled="true">
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFEB3B"
+                    app:passwordToggleEnabled="true">
 
-                <android.support.design.widget.TextInputEditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="#FFEB3B"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:text="Password"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:paddingBottom="20dp"/>
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#FFEB3B"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:text="Password"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:paddingBottom="20dp"/>
                 </android.support.design.widget.TextInputLayout>
 
 
@@ -109,4 +109,4 @@
         </RelativeLayout>
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>
