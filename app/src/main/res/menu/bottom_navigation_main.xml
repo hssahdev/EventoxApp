@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="Calendar"
+        android:enabled="true"
+        android:icon="@drawable/calendar"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/nav_explore"
+        android:title="Explore"
+        android:icon="@drawable/compass"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/nav_notifications"
+        android:title="Notifications"
+        android:enabled="true"
+        android:icon="@drawable/notification"
+        app:showAsAction="ifRoom"/>
+</menu>
