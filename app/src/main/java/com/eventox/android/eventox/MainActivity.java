@@ -14,7 +14,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.eventox.android.eventox.Navigation.CalendarFragment;
+import com.eventox.android.eventox.Navigation.ExploreFragment;
 import com.eventox.android.eventox.Navigation.HomeFragment;
+import com.eventox.android.eventox.Navigation.NewsFragment;
+import com.eventox.android.eventox.Navigation.NotificationsFragment;
 import com.eventox.android.eventox.User.UserActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -51,15 +55,19 @@ public class MainActivity extends AppCompatActivity
 
                 switch (menuItem.getItemId()){
                     case R.id.nav_calendar :
+                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new CalendarFragment()).commit();
                         return true;
                     case R.id.nav_news:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new NewsFragment()).commit();
                         return true;
                     case R.id.nav_home :
-                        getSupportFragmentManager().beginTransaction().add(R.id.mainFrameLayout, new HomeFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new HomeFragment()).commit();
                         return true;
                     case R.id.nav_explore :
+                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new ExploreFragment()).commit();
                         return true;
                     case R.id.nav_notifications :
+                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new NotificationsFragment()).commit();
                         return true;
                 }
 
