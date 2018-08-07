@@ -69,8 +69,10 @@
                     android:background="@drawable/text_background2"
                     android:ems="10"
                     android:hint="Username"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+
                     android:inputType="textPersonName"
-                    android:textAlignment="center"
+                   android:gravity="center_horizontal"
                     android:textColor="@android:color/black" />
 
                 <android.support.design.widget.TextInputLayout
@@ -86,8 +88,10 @@
                         android:background="#FFEB3B"
                         android:ems="10"
                         android:inputType="textPassword"
-                        android:text="Password"
-                        android:textAlignment="center"
+                        android:ellipsize="start"
+                        android:hint="Password"
+                        android:drawableStart="@drawable/ic_lock_black_24dp"
+                        android:gravity="center"
                         android:textColor="@android:color/black"
                         android:paddingBottom="20dp"/>
                 </android.support.design.widget.TextInputLayout>
