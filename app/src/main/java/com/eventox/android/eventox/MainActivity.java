@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -57,19 +58,19 @@ public class MainActivity extends AppCompatActivity
 
                 switch (menuItem.getItemId()){
                     case R.id.nav_calendar :
-                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new CalendarFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).replace(R.id.mainFrameLayout, new CalendarFragment()).commit();
                         return true;
                     case R.id.nav_news:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new NewsFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).replace(R.id.mainFrameLayout, new NewsFragment()).commit();
                         return true;
                     case R.id.nav_home :
-                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new HomeFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).replace(R.id.mainFrameLayout, new HomeFragment()).commit();
                         return true;
                     case R.id.nav_explore :
-                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new ExploreFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).replace(R.id.mainFrameLayout, new ExploreFragment()).commit();
                         return true;
                     case R.id.nav_notifications :
-                        getSupportFragmentManager().beginTransaction().replace(R.id.mainFrameLayout, new NotificationsFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).replace(R.id.mainFrameLayout, new NotificationsFragment()).commit();
                         return true;
                 }
 

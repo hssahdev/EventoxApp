@@ -70,9 +70,9 @@
                     android:ems="10"
                     android:hint="Username"
                     android:drawableLeft="@drawable/ic_person_black_24dp"
-
                     android:inputType="textPersonName"
-                   android:gravity="center_horizontal"
+                    android:paddingStart="2dp"
+                    android:gravity="center_horizontal"
                     android:textColor="@android:color/black" />
 
                 <android.support.design.widget.TextInputLayout
@@ -87,6 +87,7 @@
                         android:layout_height="40dp"
                         android:background="#FFEB3B"
                         android:ems="10"
+                        android:paddingStart="2dp"
                         android:inputType="textPassword"
                         android:ellipsize="start"
                         android:hint="Password"

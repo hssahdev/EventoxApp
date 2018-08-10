@@ -15,7 +15,7 @@ public class UserActivity extends AppCompatActivity implements LoginFragment.OnF
         getSupportActionBar().hide();
 
         LoginFragment fragment = new LoginFragment();
-        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+        getSupportFragmentManager().beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .add(R.id.frameLayout,fragment)
                 .commit();
     }
@@ -23,7 +23,7 @@ public class UserActivity extends AppCompatActivity implements LoginFragment.OnF
     @Override
     public void onSignupClicked() {
         getSupportFragmentManager()
-                .beginTransaction().setTransition(FragmentTransaction.TRANSIT_EXIT_MASK)
+                .beginTransaction()
                 .replace(R.id.frameLayout,new SignupFragment())
                 .commit();
     }
@@ -31,8 +31,8 @@ public class UserActivity extends AppCompatActivity implements LoginFragment.OnF
     @Override
     public void onLoginClicked() {
         getSupportFragmentManager().
-                beginTransaction().setTransition(FragmentTransaction.TRANSIT_ENTER_MASK).
-                replace(R.id.frameLayout,new LoginFragment())
+                beginTransaction()
+                .replace(R.id.frameLayout,new LoginFragment())
                 .commit();
     }
 }
