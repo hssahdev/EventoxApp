@@ -1,16 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Navigation.HomeFragment">
 
-    <ir.apend.slider.ui.Slider
-        android:padding="10dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:id="@+id/slider"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ir.apend.slider.ui.Slider
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/slider"
+            />
 
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/home_interests_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Interests"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:columnCount="2">
+
+                <RelativeLayout android:layout_columnWeight="1">
+                    <ImageView
+                        android:src="@drawable/dance"
+                        android:layout_width="160dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="90dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dance"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_columnWeight="1">
+                    <ImageView
+                        android:src="@drawable/dance"
+                        android:layout_width="160dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="90dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dance"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_columnWeight="1">
+                    <ImageView
+                        android:src="@drawable/dance"
+                        android:layout_width="160dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="90dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dance"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_columnWeight="1">
+                    <ImageView
+                        android:src="@drawable/dance"
+                        android:layout_width="160dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="90dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dance"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_columnWeight="1">
+                    <ImageView
+                        android:src="@drawable/dance"
+                        android:layout_width="160dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="90dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dance"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_columnWeight="1">
+                    <ImageView
+                        android:src="@drawable/dance"
+                        android:layout_width="160dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="90dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dance"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
