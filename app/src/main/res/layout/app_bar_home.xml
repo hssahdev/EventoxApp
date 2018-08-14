@@ -25,6 +25,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/edittext_background_curved"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
                 >
 
                 <EditText
@@ -32,10 +34,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:maxLines="1"
+                    android:hint="Search"
+                    android:textColorHint="@android:color/darker_gray"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="7dp"
                     android:textColor="@android:color/black"
                     android:background="@null"/>
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
